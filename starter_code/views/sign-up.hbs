@@ -1,0 +1,13 @@
+<div class="container">
+  <form action="/auth/sign-up" method="post">
+    <input type="email" name="email" required="true">
+    <br>
+    <input type="password" name="password" required="true">
+    <br>
+    <br>
+    <button type="submit">Create an account!</button>
+  </form>
+  <br> {{#if error}}
+  <h2>Error: {{error}}</h2>
+  {{/if}}
+</div>
